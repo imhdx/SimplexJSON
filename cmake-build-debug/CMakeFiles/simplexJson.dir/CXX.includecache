@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Taccen/SimplexJSON/simplexjson.cpp
+simplexjson.h
+E:/Taccen/SimplexJSON/simplexjson.h
+cassert
+-
+error.h
+-
+cmath
+-
+cstdlib
+-
+cstring
+-
+unordered_map
+-
+
+E:/Taccen/SimplexJSON/simplexjson.h
+string
+-
+vector
+-
+unordered_map
+-
+

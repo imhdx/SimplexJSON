@@ -1,0 +1,2 @@
+"D:\Program Files\JETBRA~1\CLION2~1.2\mingw64\bin\ar.exe" qc libsimplexJson.a  CMakeFiles/simplexJson.dir/simplexjson.cpp.obj
+"D:\Program Files\JETBRA~1\CLION2~1.2\mingw64\bin\ranlib.exe" libsimplexJson.a
