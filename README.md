@@ -18,8 +18,7 @@
 
 ## TODO
 
-- 支持simplex_value转换成C++对象
-
+- 支持simplex_value转换成C++对象（有些难度）
 
 - 完善测试
 
