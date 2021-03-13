@@ -11,6 +11,7 @@
 - null
 - false
 - true
+- number
 - array
 - object
 - string
@@ -19,7 +20,6 @@
 
 - 支持simplex_value转换成C++对象
 
-- 支持simplex_value转换成JSON字符串
 
 - 完善测试
 

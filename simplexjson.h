@@ -5,13 +5,13 @@
 #include <vector>
 #include <unordered_map>
 typedef enum{
-    SIMPLEX_NULL,
-    SIMPLEX_FALSE,
-    SIMPLEX_TRUE,
-    SIMPLEX_NUMBER,
-    SIMPLEX_ARRAY,
-    SIMPLEX_OBJECT,
-    SIMPLEX_STRING
+  SIMPLEX_NULL,
+  SIMPLEX_FALSE,
+  SIMPLEX_TRUE,
+  SIMPLEX_NUMBER,
+  SIMPLEX_ARRAY,
+  SIMPLEX_OBJECT,
+  SIMPLEX_STRING
 }simplex_type;
 
 
@@ -36,6 +36,7 @@ enum {
 //}
 
 int simplex_parse(simplex_value *v, const char *json);
+std::string simplex_stringify(const simplex_value* v);
 
 void simplex_free(simplex_value *v);
 
@@ -43,7 +44,7 @@ simplex_type simplex_get_type(const simplex_value* v);
 
 
 
-int simplex_get_boolean(const simplex_value *v);
+bool simplex_get_boolean(const simplex_value *v);
 void simplex_set_boolean(simplex_value *v,int b);
 
 double simplex_get_number(const simplex_value *v);
@@ -53,7 +54,7 @@ const std::string& simplex_get_string(const simplex_value *v);
 size_t simplex_get_string_length(const simplex_value *v);
 void simplex_set_string(simplex_value *v,const std::string &s);
 
-size_t simplex_get_arrat_size(const simplex_value *v);
+size_t simplex_get_array_size(const simplex_value *v);
 simplex_value simplex_get_array_element(const simplex_value *v,size_t index);
 
 size_t simplex_get_object_size(const simplex_value *v);
